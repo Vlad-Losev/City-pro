@@ -1,0 +1,126 @@
+.footer {
+  background-color: #E8E8E8;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (max-width: 600px) {
+    border-radius: 20px 20px 0 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 600px) {
+      justify-content: center;
+    }
+  }
+
+  &__block1 {
+    max-width: 400px;
+
+    @media (max-width: 1024px) {
+      max-width: 300px;
+    }
+
+    @media (max-width: 600px) {
+      text-align: center;
+    }
+
+    &__img {
+      width: 295px;
+      margin-bottom: 40px;
+
+      @media (max-width: 1024px) {
+        width: 200px;
+      }
+
+      @media (max-width: 600px) {
+        margin-bottom: 17px;
+      }
+    }
+
+    &__text {
+      margin-bottom: 50px;
+
+      @media (max-width: 600px) {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 18px;
+      }
+    }
+
+    &__text2 {
+      font-weight: 600;
+
+      @media (max-width: 600px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .footer__policy_mobile {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      .footer__policy_span {
+        display: none;
+        width: fit-content;
+        color: #8C8C8C;
+        border-bottom: 1px solid #8C8C8C;
+
+        @media (max-width: 600px) {
+          display: block;
+        }
+      }
+    }
+    
+    .footer__block2__icon_mobile {
+      display: none;
+      @media (max-width: 600px) {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__block2 {
+
+    @media (max-width: 600px) {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      line-height: 41px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .footer__policy {
+      display: block;
+      color: #8C8C8C;
+      margin-bottom: 50px;
+
+      &_span {
+        border-bottom: 1px solid #8C8C8C;
+      }
+    }
+
+    &__icon {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+    }
+  }
+
+  &__block3 {
+    @media (max-width: 880px) {
+      display: none;
+    }
+  }
+}

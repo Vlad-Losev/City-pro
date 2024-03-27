@@ -1,0 +1,142 @@
+.about-us {
+  margin-bottom: 100px;
+
+  @media(max-width: 1024px) {
+    margin-bottom: 70px;
+  }
+
+  &__container {
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
+
+  &__block1 {
+    background-image: url(../img/about-us-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0 0 30px 30px;
+    padding: 30px 70px 100px;
+    margin-bottom: 100px;
+
+    @media (max-width: 1130px) {
+      background-color: #E8E8E8;
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-bottom: 75px;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 50px;
+    }
+
+    .about-us__title {
+      color: #465067;
+      font-size: 45px;
+      line-height: 38px;
+      font-weight: 700;
+      margin-bottom: 45px;
+
+      @media (max-width: 1024px) {
+        font-size: 35px;
+        line-height: 29px;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+      }
+
+      @media (max-width: 768px) {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__flex {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      &__1 {
+        width: 50%;
+
+        @media (max-width: 768px) {
+          width: 100%;
+          order: 2;
+        }
+      }
+
+      &__2 {
+        width: 50%;
+
+        @media (max-width: 768px) {
+          width: 100%;
+          order: 1;
+          text-align: center;
+        }
+      }
+    }
+
+    &__title {
+      color: #54994B;
+      font-size: 23px;
+      line-height: 31px;
+      font-weight: 700;
+      margin-bottom: 20px;
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 7px;
+      }
+    }
+
+    &__text {
+      @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__block2 {
+    .about-us__list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      .about-us__item {
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+
+        .about-us__item__img {
+          width: 63px;
+        }
+
+        .about-us__item__img_margin {
+          margin-bottom: 13px;
+        }
+
+        .about-us__item__text {
+          font-weight: 700;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

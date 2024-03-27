@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>СитиПро</title>
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const createLink = url => {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = url;
+        document.head.append(link);
+      }
+      createLink('css/index.css')
+    })
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script defer src="./js/index.min.js"></script>
+</head>
+
+<body>
+  <div class="body__wrapper">
+    <header class="header" id="header">
+      <div class="container header__container">
+        <div class="header__container__wrapper">
+          <a class="header__link" href="#">
+            <img class="logo" src="./img/favicon.svg" alt="логотип">
+          </a>
+
+          <div class="header__burger" id="burger">
+            <span></span><span></span><span></span>
+          </div>
+
+          <nav class="header__nav" id="menu">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__item__link" href="#about-us">О нас</a>
+              </li>
+
+              <li class="header__item">
+                <a class="header__item__link" href="#service">Виды услуг</a>
+              </li>
+
+              <li class="header__item">
+                <a class="header__item__link" href="#portfolio">Портфолио</a>
+              </li>
+
+              <li class="header__item">
+                <a class="header__item__link" href="#request">Оставьте заявку</a>
+              </li>
+
+              <li class="header__item">
+                <a class="header__item__link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+
+            <div class="header__nav__social">
+              <a class="header__nav__social__item" href="#">
+                <img src="./img/header-vk.svg" alt="#">
+              </a>
+
+              <a class="header__nav__social__item" href="#">
+                <img src="./img/header-telegram.svg" alt="#">
+              </a>
+
+              <a class="header__nav__social__item" href="#">
+                <img src="./img/header-whatsup.svg" alt="#">
+              </a>
+
+              <a class="header__nav__social__item" href="#">
+                <img src="./img/header-viber.svg" alt="#">
+              </a>
+            </div>
+          </nav>
+
+          <div class="header__tel">
+            <a class="header__tel__link" href="tel:79000000000">
+              <img src="./img/header-tel.svg" alt="телефон">
+
+              <div class="header__tel__link__number">+7 900 000 00 00</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="wrapper">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="hero__flex__1">
+                    <h1 class="hero__title">Реставрация лакокрасочного покрытия</h1>
+
+                    <button class="hero__btn">Получить консультацию</button>
+                  </div>
+
+                  <picture>
+                    <source srcset="./img/hero-img-1.avif" type="image/avif">
+                    <source srcset="./img/hero-img-1.webp" type="image/webp">
+                    <img class="hero__flex__img" src="./img/hero-img-1.png" alt="#" loading="lazy" width="505"
+                      height="496">
+                  </picture>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="hero__flex__1">
+                    <h2 class="hero__title">Профессиональная окраска интерьера</h2>
+
+                    <button class="hero__btn">Получить консультацию</button>
+                  </div>
+
+                  <picture>
+                    <source srcset="./img/hero-img-2.avif" type="image/avif">
+                    <source srcset="./img/hero-img-2.webp" type="image/webp">
+                    <img class="hero__flex__img" src="./img/hero-img-2.png" alt="#" loading="lazy" width="470"
+                      height="450">
+                  </picture>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="hero__flex__1">
+                    <h2 class="hero__title">Профессиональная окраска экстерьера</h2>
+
+                    <button class="hero__btn">Получить консультацию</button>
+                  </div>
+
+                  <picture>
+                    <source srcset="./img/hero-img-3.avif" type="image/avif">
+                    <source srcset="./img/hero-img-3.webp" type="image/webp">
+                    <img class="hero__flex__img" src="./img/hero-img-3.png" alt="#" loading="lazy" width="450"
+                      height="466">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-us" id="about-us">
+        <div class="container about-us__container">
+          <div class="about-us__block1">
+            <h2 class="about-us__title">О нас</h2>
+
+            <div class="about-us__block1__flex">
+              <div class="about-us__block1__flex__1">
+                <h3 class="about-us__block1__title">
+                  Сплочённость команды профессионалов позволила расправить крылья
+                </h3>
+
+                <p class="about-us__block1__text">
+                  Противоположная точка зрения подразумевает, что интерактивные прототипы, инициированные исключительно
+                  синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.
+                </p>
+
+                <p class="about-us__block1__text">
+                  В частности, перспективное планирование предопределяет высокую востребованность инновационных методов
+                  управления процессами.
+                </p>
+
+                <p class="about-us__block1__text">
+                  А ещё ключевые особенности структуры проекта представляют собой не что иное, как квинтэссенцию победы
+                  маркетинга над разумом и должны быть подвергнуты целой серии независимых исследований.
+                </p>
+              </div>
+
+              <div class="about-us__block1__flex__2">
+                <picture>
+                  <source srcset="./img/about-us-img.avif" type="image/avif">
+                  <source srcset="./img/about-us-img.webp" type="image/webp">
+                  <img src="./img/about-us-img.png" alt="#" loading="lazy" width="500" height="350">
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-us__block2">
+            <ul class="about-us__list">
+              <li class="about-us__item">
+                <img src="./img/about-us-img1.svg" alt="#" class="about-us__item__img">
+
+                <p class="about-us__item__text">Гарантия на все виды работ</p>
+              </li>
+
+              <li class="about-us__item">
+                <img src="./img/about-us-img2.svg" alt="#" class="about-us__item__img">
+
+                <p class="about-us__item__text">В работе используются материалы от ведущих европейских производителей
+                </p>
+              </li>
+
+              <li class="about-us__item">
+                <img src="./img/about-us-img3.svg" alt="#" class="about-us__item__img about-us__item__img_margin">
+
+                <p class="about-us__item__text">Высококвалифицированный
+                  персонал</p>
+              </li>
+
+              <li class="about-us__item">
+                <img src="./img/about-us-img4.svg" alt="#" class="about-us__item__img">
+
+                <p class="about-us__item__text">Своя лаборатория цветоподбора</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="service" id="service">
+        <div class="container service__container">
+          <h2 class="service__title">Виды услуг</h2>
+
+          <ul class="service__list">
+            <li class="service__item service__item_1">
+              <div class="service__item__img__wrapper">
+                <picture>
+                  <source srcset="./img/service-img1.avif" type="image/avif">
+                  <source srcset="./img/service-img1.webp" type="image/webp">
+                  <img src="./img/service-img1.png" alt="#" class="service__item__img" loading="lazy" width="270"
+                    height="500">
+                </picture>
+              </div>
+
+              <img src="./img/service-icon1.svg" alt="#" class="service__item__icon">
+
+              <p class="service__item__text">Реставрация<br> лакокрасочного<br> покрытия</p>
+
+              <img src="./img/service-arrow-down.svg" alt="#" class="service__item__arrow service__item__arrow_1">
+            </li>
+
+            <li class="service__item service__item_2">
+              <div class="service__item__img__wrapper">
+                <picture>
+                  <source srcset="./img/service-img2.avif" type="image/avif">
+                  <source srcset="./img/service-img2.webp" type="image/webp">
+                  <img src="./img/service-img2.png" alt="#" class="service__item__img" loading="lazy" width="270"
+                    height="500">
+                </picture>
+              </div>
+
+              <img src="./img/service-icon2.svg" alt="#" class="service__item__icon">
+
+              <p class="service__item__text">Профессиональная<br> окраска<br> на объекте</p>
+
+              <img src="./img/service-arrow-down.svg" alt="#" class="service__item__arrow service__item__arrow_2">
+            </li>
+
+            <li class="service__item service__item_3">
+              <div class="service__item__img__wrapper">
+                <picture>
+                  <source srcset="./img/service-img3.avif" type="image/avif">
+                  <source srcset="./img/service-img3.webp" type="image/webp">
+                  <img src="./img/service-img3.png" alt="#" class="service__item__img" loading="lazy" width="270"
+                    height="500">
+                </picture>
+              </div>
+
+              <img src="./img/service-icon3.svg " alt="#" class="service__item__icon">
+
+              <p class="service__item__text">Профессиональная<br> окраска<br> экстерьера</p>
+
+              <img src="./img/service-arrow-down.svg" alt="#" class="service__item__arrow service__item__arrow_3">
+            </li>
+
+            <li class="service__item service__item_4">
+              <div class="service__item__img__wrapper">
+                <picture>
+                  <source srcset="./img/service-img4.avif" type="image/avif">
+                  <source srcset="./img/service-img4.webp" type="image/webp">
+                  <img src="./img/service-img4.png" alt="#" class="service__item__img" loading="lazy" width="270"
+                    height="500">
+                </picture>
+              </div>
+
+              <img src="./img/service-icon4.svg " alt="#" class="service__item__icon">
+
+              <p class="service__item__text">Профессиональная<br> окраска ограждений<br> и витражей</p>
+
+              <img src="./img/service-arrow-down.svg" alt="#" class="service__item__arrow service__item__arrow_4">
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="trust">
+        <div class="container trust__container">
+          <h2 class="trust__title">Нам доверяют</h2>
+
+          <ul class="trust__list">
+            <li class="trust__item">
+              <img src="./img/trust-img1.svg" alt="#" class="trust__img trust__img1">
+            </li>
+
+            <li class="trust__item">
+              <img src="./img/trust-img2.svg" alt="#" class="trust__img trust__img2">
+            </li>
+
+            <li class="trust__item">
+              <img src="./img/trust-img3.svg" alt="#" class="trust__img trust__img3">
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <div class="container portfolio__container">
+          <div class="swiper swiper2">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <h2 class="portfolio__title">Портфолио<br>работ</h2>
+
+                <div class="swiper-slide__flex">
+                  <div class="swiper-slide__flex__block1">
+                    <h3 class="portfolio__title3">Kazakov Grand Loft</h3>
+
+                    <p class="portfolio__text">
+                      Kazakov Grand Loft — новый проект в исторической части Москвы, дом для тех, кто не идет на
+                      компромиссы. Все, на что город будет равняться в обозримой перспективе, находится здесь. И в
+                      центре этого мира вы. Индивидуальность даже в мелочах и комфорт, возведенный в абсолют — чем не
+                      рецепт совершенства?
+                    </p>
+
+                    <p class="portfolio__text">
+                      Проект прогрессивной авторской архитектуры, умного наполнения и персональных панорамных видов на
+                      город. Здесь созданы условия премиального сервиса, чтобы вы не отвлекались на бытовые мелочи, а
+                      просто наслаждались жизнью.
+                    </p>
+                  </div>
+
+                  <div class="swiper-slide__flex__block2">
+                    <picture>
+                      <source srcset="./img/portfolio-img1.avif" type="image/avif">
+                      <source srcset="./img/portfolio-img1.webp" type="image/webp">
+                      <img src="./img/portfolio-img1.png" alt="#" class="portfolio__img" loading="lazy" width="600"
+                        height="500">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <h2 class="portfolio__title">Портфолио<br>работ</h2>
+
+                <div class="swiper-slide__flex">
+                  <div class="swiper-slide__flex__block1">
+                    <h3 class="portfolio__title3">Новое здание Третьяковской галереи</h3>
+
+                    <p class="portfolio__text">
+                      Третьяковская галерея на Кадашёвской набережной — строящийся новый корпус Третьяковской галереи,
+                      расположенный на Кадашёвской набережной, 10 — рядом с историческими зданиями музея в Лаврушинском
+                      переулке.
+                    </p>
+
+                    <p class="portfolio__text">
+                      Новый музейный корпус спроектирован «Моспроектом-4» и дополнен конкурсным проектом фасадов от
+                      архитектурного бюро SPEECH.
+                    </p>
+
+                    <p class="portfolio__text">
+                      Строительство началось летом 2014 года, завершение работ запланировано на 2024 год.
+                    </p>
+                  </div>
+
+                  <div class="swiper-slide__flex__block2">
+                    <picture>
+                      <source srcset="./img/portfolio-img2.avif" type="image/avif">
+                      <source srcset="./img/portfolio-img2.webp" type="image/webp">
+                      <img src="./img/portfolio-img2.png" alt="#" class="portfolio__img" loading="lazy" width="600"
+                        height="500">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <h2 class="portfolio__title">Портфолио<br>работ</h2>
+
+                <div class="swiper-slide__flex">
+                  <div class="swiper-slide__flex__block1">
+                    <h3 class="portfolio__title3">ТРЦ Павелецкая Плаза</h3>
+
+                    <p class="portfolio__text">
+                      ТРЦ «Павелецкая Плаза» расположится в историческом центре Москвы, на первой линии Садового кольца,
+                      на площади перед Павелецким вокзалом. Торговый центр будет соединен подземным переходом через
+                      Садовое кольцо с радиальной станцией метро «Павелецкая», а также одноименным ТПУ, который свяжет
+                      транспортные артерии города с аэропортом «Домодедово».
+                    </p>
+
+                    <p class="portfolio__text">
+                      Ежедневный пассажиропоток через станции метро и наземный транспорт составляет около 300 тыс.
+                      человек. В зоне охвата торгового центра живут и работают более 3 млн человек.
+                    </p>
+                  </div>
+
+                  <div class="swiper-slide__flex__block2">
+                    <picture>
+                      <source srcset="./img/portfolio-img3.avif" type="image/avif">
+                      <source srcset="./img/portfolio-img3.webp" type="image/webp">
+                      <img src="./img/portfolio-img3.png" alt="#" class="portfolio__img" loading="lazy" width="600"
+                        height="500">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__wrapper">
+              <div class="swiper-pagination"></div>
+
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="request" id="request">
+        <div class="container request__container">
+          <h2 class="request__title ">Оставьте<br>заявку</h2>
+
+          <form class="request__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <fieldset class="request__fieldset">
+              <input class="request__input request__form__name" type="text" name="name" id="name" placeholder="Ваше имя"
+                required>
+
+              <input class="request__input request__form__phone" type="text" name="phone" id="phone"
+                placeholder="Номер телефона*" required>
+            </fieldset>
+
+            <input class="request__message" type="text" placeholder="Ваше сообщение" name="message" id="message">
+
+            <div class="request__btn__wrapper">
+              <input class="request__btn" type="checkbox" id="request__btn" required>
+              <label for="request__btn"></label>
+            </div>
+
+            <div class="request__btn__submit_wrapper">
+              <button class="request__btn__submit" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="container contacts__container">
+          <div class="contacts__block1">
+            <h2 class="contacts__title">Контакты</h2>
+
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <img src="./img/contacts-icon1.svg" alt="#" class="contacts__icon">
+
+                <div class="contacts__item__text">
+                  <div class="contacts__item__text__1">г. Москва</div>
+
+                  <div class="contacts__item__text__2">ул. Московская д.0</div>
+                </div>
+              </li>
+
+              <li class="contacts__item">
+                <img src="./img/contacts-icon2.svg" alt="#" class="contacts__icon">
+
+                <div class="contacts__item__text">
+                  <a class="contacts__item__text__1" href="tel:79000000000">+7 900 000 00 00</a>
+
+                  <a class="contacts__item__text__2" href="#"><span class="contacts__item__text__2_border">заказать
+                      звонок</span></a>
+                </div>
+              </li>
+
+              <li class="contacts__item">
+                <img src="./img/contacts-icon3.svg" alt="#" class="contacts__icon">
+
+                <div class="contacts__item__text">
+                  <div class="contacts__item__text__1">Пн-Вс 9:00-20:00</div>
+
+                  <div class="contacts__item__text__2">без выходных</div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="contacts__social">
+              <a class="contacts__social__item" href="#">
+                <img src="./img/header-vk.svg" alt="#">
+              </a>
+
+              <a class="contacts__social__item" href="">
+                <img src="./img/header-telegram.svg" alt="#">
+              </a>
+
+              <a class="contacts__social__item" href="">
+                <img src="./img/header-whatsup.svg" alt="#">
+              </a>
+
+              <a class="contacts__social__item" href="">
+                <img src="./img/header-viber.svg" alt="#">
+              </a>
+            </div>
+
+            <a class="contacts__policy" href="#"><span class="contacts__policy_span">Политика
+                конфиденциальности</span></a>
+          </div>
+
+          <div class="contacts__block2">
+            <picture>
+              <source srcset="./img/contacts-map.avif" type="image/avif">
+              <source srcset="./img/contacts-map.webp" type="image/webp">
+              <img class="contacts__block2__img" src="./img/contacts-map.png" alt="#" loading="lazy" width="730"
+                height="370">
+            </picture>
+
+            <a class="contacts__arrow" href="#header"></a>
+          </div>
+
+
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__block1">
+          <img src="./img/favicon.svg" alt="#" class="footer__block1__img">
+
+          <p class="footer__block1__text">
+            Реставрация (восстановление) лакокрасочного покрытия на объекте (окна, двери), профессиональная окраска на
+            объекте (окна, двери, предметы интерьера и экстерьера, ограждения, витражи и т.д.)
+          </p>
+
+          <a class="footer__policy footer__policy_mobile" href="#"><span class="footer__policy_span">Политика
+              конфиденциальности</span></a>
+
+          <p class="footer__block1__text2">СитиПро 2023</p>
+
+          <div class="footer__block2__icon footer__block2__icon_mobile">
+            Разработано
+            <img src="./img/footer-icon.svg" alt="#">
+          </div>
+        </div>
+
+        <div class="footer__block2">
+          <div class="footer__block2__list">
+            <a href="#about-us" class="footer__block2__item">О нас</a>
+
+            <a href="#service" class="footer__block2__item">Виды услуг</a>
+
+            <a href="#portfolio" class="footer__block2__item">Портфолио</a>
+
+            <a href="#request" class="footer__block2__item">Оставьте заявку</a>
+
+            <a href="#contacts" class="footer__block2__item">Контакты</a>
+          </div>
+
+          <a class="footer__policy" href="#"><span class="footer__policy_span">Политика конфиденциальности</span></a>
+
+          <div class="footer__block2__icon">
+            Разработано
+            <img src="./img/footer-icon.svg" alt="#">
+          </div>
+        </div>
+
+        <div class="footer__block3">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <img src="./img/contacts-icon1.svg" alt="#" class="contacts__icon">
+
+              <div class="contacts__item__text">
+                <div class="contacts__item__text__1">г. Москва</div>
+
+                <div class="contacts__item__text__2">ул. Московская д.0</div>
+              </div>
+            </li>
+
+            <li class="contacts__item">
+              <img src="./img/contacts-icon2.svg" alt="#" class="contacts__icon">
+
+              <div class="contacts__item__text">
+                <a class="contacts__item__text__1" href="tel:79000000000">+7 900 000 00 00</a>
+
+                <a class="contacts__item__text__2" href="#"><span class="contacts__item__text__2_border">заказать
+                    звонок</span></a>
+              </div>
+            </li>
+
+            <li class="contacts__item">
+              <img src="./img/contacts-icon3.svg" alt="#" class="contacts__icon">
+
+              <div class="contacts__item__text">
+                <div class="contacts__item__text__1">Пн-Вс 9:00-20:00</div>
+
+                <div class="contacts__item__text__2">без выходных</div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="contacts__social">
+            <a class="contacts__social__item" href="#">
+              <img src="./img/header-vk.svg" alt="#">
+            </a>
+
+            <a class="contacts__social__item" href="">
+              <img src="./img/header-telegram.svg" alt="#">
+            </a>
+
+            <a class="contacts__social__item" href="">
+              <img src="./img/header-whatsup.svg" alt="#">
+            </a>
+
+            <a class="contacts__social__item" href="">
+              <img src="./img/header-viber.svg" alt="#">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./scripts/swiper-bundle.min.js"></script>
+</body>
+
+</html>
